@@ -1,8 +1,53 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 50px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+
+  #quote-display, #quote-click-text, #quote-click-text-2, #four, #five, #six {
+    color: #f0f0f0;
+  }
+
+  #input, #calculator input, #calculator select, #num1, #num2, #operation {
+    background-color: #555;
+    color: #f0f0f0;
+    border: 1px solid #888;
+  }
+
+  input::placeholder {
+    color: #bbb;
+  }
+
+  #output, #result, #timer {
+    color: #f0f0f0;
+  }
+
+  h2 {
+    color: #f0f0f0;
+  }
+
+  button, #generate-quote, #generate-click-text, #image1, #image2, #submit, #start, #stop, #calculate {
+    background-color: #0056b3;
+    color: #f0f0f0;
+  }
+
+  button:hover, #generate-quote:hover, #generate-click-text:hover, #image1:hover, #image2:hover, #submit:hover, #start:hover, #stop:hover, #calculate:hover {
+    background-color: #003f7f;
+  }
 }
 
 /* Quote Display Styles */
@@ -10,14 +55,20 @@ body {
   font-style: italic;
   margin: 20px 0;
   font-size: 18px;
+  color: #333;
 }
 
 /* Input Styles */
 #input, #calculator input, #calculator select, #num1, #num2, #operation {
   font-style: italic;
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 18px;
   width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Placeholder Styles */
@@ -41,15 +92,17 @@ button, #generate-quote, #generate-click-text, #image1, #image2, #submit, #start
   padding: 10px 20px;
   font-weight: bold;
   border: none;
-  background-color: blue;
+  background-color: #007bff;
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover, #generate-quote:hover, #generate-click-text:hover, #image1:hover, #image2:hover, #submit:hover, #start:hover, #stop:hover, #calculate:hover {
-  background-color: darkblue;
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Image Styles */
@@ -61,11 +114,20 @@ button:hover, #generate-quote:hover, #generate-click-text:hover, #image1:hover, 
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Output Styles */
 #output, #result, #timer {
-  font-size: 25px;
+  font-size: 36px;
   font-weight: bold;
   margin-top: 20px;
+  color: #333;
+}
+
+/* Additional Styles */
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
 }
