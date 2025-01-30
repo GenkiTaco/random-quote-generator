@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Quote Display Styles */
+#quote-display, #quote-click-text, #quote-click-text-2, #four, #five, #six {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Input Styles */
+#input, #calculator input, #calculator select, #num1, #num2, #operation {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 18px;
+  width: 200px;
+}
+
+/* Placeholder Styles */
+input::placeholder {
+  font-style: italic;
+  color: #888;
+}
+
+/* Calculator Styles */
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Button Styles */
+button, #generate-quote, #generate-click-text, #image1, #image2, #submit, #start, #stop, #calculate {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover, #generate-quote:hover, #generate-click-text:hover, #image1:hover, #image2:hover, #submit:hover, #start:hover, #stop:hover, #calculate:hover {
+  background-color: darkblue;
+}
+
+/* Image Styles */
+#image {
+  display: none;
+  margin-top: 20px;
+  max-width: 25%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Output Styles */
+#output, #result, #timer {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
